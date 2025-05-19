@@ -26,17 +26,41 @@
 2. Agregar a sandwich.txt condimentos e ingredientes que le gusten, simulando que es un sandwich que se va a comer.
 		
 3. Antes de realizar cualquier acción con git, guarde el estado actual del directorio en el archivo nombre_apellido.txt. Para esto, se debe ejecutar el comando git status y copiar el resultado en el archivo nombre_apellido.txt. Explique que significa la salida del comando.
-		
+		On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sandwich.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
 4. Agregar el archivo sandwich.txt al repositorio local. Para esto, se debe ejecutar el comando git add sandwich.txt.
-	
-5. Explique que cambio en la salida del comando git status luego de ejecutar el comando git add sandwich.txt.
 		
+5. Explique que cambio en la salida del comando git status luego de ejecutar el comando git add sandwich.txt.
+		On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   sandwich.txt
+
 6. Realizar un commit con el mensaje "Agrego mi sandwich.txt". Para esto, se debe ejecutar el comando git commit -m "Agrego mi sandwich.txt".
+		>git commit -m "agrego mi sanwdich.txt"
+[main 1cc3d24] agrego mi sandwich
 
 7. Explique que cambio en la salida del comando git status luego de ejecutar el comando git commit -m "Agrego mi sandwich.txt".
+		On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
 
 8. Agregar salsas de su preferencia a sandwich.txt y realizar un commit con el mensaje "Agrego salsas".
-
+		
 9. Escriba la salida del comando git log en el archivo nombre_apellido.txt. Y explique que significa. ¿En qué orden aparecen los commits?
 
 10. Pruebe las variaciones del comando git log y explique que observa en cada una de ellas. 10.1. git log --oneline 10.2. git log --stat
